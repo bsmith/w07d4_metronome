@@ -1,5 +1,6 @@
 {
   "name": "metronome",
+  "homepage": "https://bsmith.github.io/metronome",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "./deploy.sh"
   },
   "eslintConfig": {
     "extends": [
