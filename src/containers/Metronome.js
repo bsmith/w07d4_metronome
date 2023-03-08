@@ -61,7 +61,7 @@ const Metronome = () => {
 
         <Indicator onOff={onOff} isPlaying={isPlaying}/>
 
-        <audio ref={audioRef} src="/beat.wav" />
+        <audio ref={audioRef} src={process.env.PUBLIC_URL + '/beat.wav'} />
     </div>
 }
 
